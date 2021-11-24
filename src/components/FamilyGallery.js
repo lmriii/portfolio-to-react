@@ -1,6 +1,5 @@
 import React from "react";
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry";
-import {Card, CardImg, CardText, CardColumns} from 'reactstrap';
+import {Card, CardImg, CardColumns} from 'reactstrap';
 import { family } from "../resources/photosFamily";
 
 // The number of columns change by resizing the window

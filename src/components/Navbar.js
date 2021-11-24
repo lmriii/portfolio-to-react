@@ -3,6 +3,7 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reac
 import background from '../resources/maternity2.jpg';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
+import logo from '../resources/logo.png';
 
 class Header extends Component {
     constructor(props) {
@@ -22,9 +23,16 @@ class Header extends Component {
     render() {
         return (
             <>
-                <Navbar light sticky="top" expand="md">
+                <Navbar light sticky="top" expand="md" style={{
+                            fontFamily: "'tangerine', cursive",
+                            marginTop: "0",
+
+                            textAlign: "center",
+                            backgroundColor: "rgba(128, 128, 128, .3)",
+                            color: "white"
+                        }}>
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="../resources/logo.png" height="30" width="30" alt="NuCamp Logo" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src={logo} height="60" width="60" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -35,7 +43,7 @@ class Header extends Component {
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/directory'>
-                                        <i className="fa fa-list fa-lg" />Gallery
+                                        <i className="fa fa-image fa-lg" />Gallery
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>

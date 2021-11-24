@@ -1,11 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Header from './components/Navbar';
 import {BrowserRouter} from 'react-router-dom';
-import Maternity from './components/Gallery';
 import Hero from './components/Hero';
-import Family from './components/FamilyGallery';
+import Gallery from './components/GalleryContainer';
+import About from './components/About';
+import Newborn1 from './components/NewbornGallery1';
+
+
 
 
 function App() {
@@ -14,8 +16,9 @@ function App() {
     <div className="App">
       <Hero />
       <Header />
-      <Family />
-      <Maternity />
+      <Newborn1 />
+      <About />
+      <Gallery />
     </div>
     </BrowserRouter>
   );
