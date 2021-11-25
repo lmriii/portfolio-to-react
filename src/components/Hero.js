@@ -1,8 +1,9 @@
 import React from "react";
-import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron } from 'reactstrap';
+import { Jumbotron } from 'reactstrap';
 import background from '../resources/maternity2.jpg';
 import '../App.css';
-import { NavLink } from 'react-router-dom';
+
+
 
 function Hero() {
     return (
@@ -19,20 +20,22 @@ function Hero() {
                     <div className="row">
                         <div className="col">
                             <p style={{
-                            fontFamily: "'tangerine', cursive",
-                            fontSize: "5.5rem",
-                            textAlign: "center",
-                            backgroundColor: "rgba(128, 128, 128, .3)",
-                            paddingTop: "3rem",
-                            color: "white"
-                        }}>Koel Memories Photography</p>
+                                fontFamily: "'tangerine', cursive",
+                                fontSize: "5.5rem",
+                                textAlign: "center",
+                                backgroundColor: "rgba(128, 128, 128, .3)",
+                                paddingTop: "3rem",
+                                color: "white"
+                            }}>Koel Memories Photography</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </Jumbotron>
+            </Jumbotron>
+
+
+
         </>
     );
 }
-
 
 export default Hero;

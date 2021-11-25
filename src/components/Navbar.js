@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
-import background from '../resources/maternity2.jpg';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
 import logo from '../resources/logo.png';
 
-class Header extends Component {
+class Navigation extends Component {
     constructor(props) {
         super(props);
         this.toggleNav = this.toggleNav.bind(this);
@@ -26,9 +25,8 @@ class Header extends Component {
                 <Navbar light sticky="top" expand="md" style={{
                             fontFamily: "'tangerine', cursive",
                             marginTop: "0",
-
                             textAlign: "center",
-                            backgroundColor: "rgba(128, 128, 128, .3)",
+                            backgroundColor: "rgba(128, 128, 128, .7)",
                             color: "white"
                         }}>
                     <div className="container">
@@ -37,22 +35,22 @@ class Header extends Component {
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/home'>
+                                    <NavLink className="nav-link" to='/'>
                                         <i className="fa fa-home fa-lg" />Home
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/directory'>
+                                    <NavLink className="nav-link" to='/gallery'>
                                         <i className="fa fa-image fa-lg" />Gallery
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/aboutus'>
+                                    <NavLink className="nav-link" to='/about'>
                                         <i className="fa fa-info fa-lg" />About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/contactus'>
+                                    <NavLink className="nav-link" to='/contactme'>
                                         <i className="fa fa-address-cards fa-lg" />Contact
                                     </NavLink>
                                 </NavItem>
@@ -65,4 +63,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default Navigation;

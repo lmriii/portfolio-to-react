@@ -11,18 +11,12 @@ class Family extends React.Component {
         }
     }
     render() {
-        const familyPhotos = this.state.famPhotos.map(
-            photo => 
-            <img src={photo.url} alt={photo.name} key={photo.id} className="m-1"/>
-        );
         const familyCard = this.state.famPhotos.map(
             photo => 
-            <Card className="col border border-dark">
+            <Card className="col border border-dark m-0 p-0 mb-3">
             <CardImg top width="100%" src={photo.url} alt={photo.name} key={photo.id}/>
             </Card>
         );
-        console.log(familyPhotos);
-        
         return (
             <>
             <CardColumns style={{margin: "auto"}}>

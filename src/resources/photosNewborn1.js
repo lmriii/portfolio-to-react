@@ -3,17 +3,17 @@
 export const newborn1 = [
     {
         id: 1,
-        name: 'pregnant woman',
-        url: '..resources/img/newborn1.jpg'
+        name: 'peek-a-boo',
+        url: '../resources/logo.png'
     },
     {
         id: 2,
         name: 'banana',
-        url: '..resources/img/newborn1.jpg'
+        url: '..\public\img\newborn1.jpg'
     },
     {
         id: 3,
-        name: 'woman',
-        url: '..resources/img/newborn1.jpg'
+        name: 'door',
+        url: 'public\img\newborn1.jpg'
     }
 ];
