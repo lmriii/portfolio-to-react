@@ -11,10 +11,13 @@
     "react-dom": "^17.0.2",
     "react-ig-feed": "^1.0.4",
     "react-popper": "^2.2.5",
+    "react-redux": "^7.2.0",
+    "react-redux-form": "^1.16.14",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "reactstrap": "^8.10.1",
+    "redux": "^4.0.5",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

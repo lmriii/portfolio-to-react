@@ -8,7 +8,9 @@ export default function About(){
         <div  style={{
 
         }}>
-        <h1>About Me</h1>
+        <h1 style={{
+            marginTop: '50px'
+        }}>About Me</h1>
         <h3>Lorem provided by Jeffsum because...why not?</h3>
         <div className="m-5 text-justify">
         <p>Eventually, you do plan to have dinosaurs on your dinosaur tour, right? This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Just my luck, no ice. Must go faster... go, go, go, go, go! We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>

@@ -4,13 +4,11 @@ import Navigation from "./Navbar";
 import Gallery from "./GalleryContainer";
 import About from "./About";
 import Hero from "./Hero";
+import Contact from "./Contact";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 class Main extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render(){
         return (
@@ -21,6 +19,7 @@ class Main extends React.Component {
                     <Route path='/' element={<Home />} />
                     <Route path='gallery' element={<Gallery />} />
                     <Route path='about' element={<About />} />
+                    <Route path='contact' element={<Contact />} />
                 </Routes>
                 
             </div>

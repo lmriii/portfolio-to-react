@@ -27,7 +27,8 @@ class Navigation extends Component {
                             marginTop: "0",
                             textAlign: "center",
                             backgroundColor: "rgba(128, 128, 128, .7)",
-                            color: "white"
+                            color: "white",
+                            height: "50px"
                         }}>
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src={logo} height="60" width="60" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
@@ -50,7 +51,7 @@ class Navigation extends Component {
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/contactme'>
+                                    <NavLink className="nav-link" to='/contact'>
                                         <i className="fa fa-address-cards fa-lg" />Contact
                                     </NavLink>
                                 </NavItem>
