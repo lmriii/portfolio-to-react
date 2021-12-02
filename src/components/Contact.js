@@ -44,23 +44,23 @@ class Contact extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row">
+                <div className="mt-5 row">
                     <div className="col">
-                        <h2 style={{marginTop: '40px'}}>Let's Connect</h2>
+                        <h2>Let's Connect</h2>
                         <hr />
                     </div>
                 </div>
-                <div className="row row-content align-items-center">
+                <div className="mx-auto row row-content align-items-center">
                     <div className="col-sm-4">
                         <h5>Check out my Instagram</h5>
                         <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noopener"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
                     </div>
-                    <div className="col">
+                    <div className="col-4">
                         <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-251-1234</a><br />
                         <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> koelmemoriesphotography@gmail.com</a>
                     </div>
                 </div>
-                <div className="row row-content">
+                <div className="mt-5 row row-content">
                     <div className="col-12">
                         <h2>Tell me a little bit about your photography needs</h2>
                         <hr />
@@ -73,7 +73,7 @@ class Contact extends Component {
                             <Row className='form-group'>
                             <Col md={{size: 3, offset: 2}}><strong>Select photography needs</strong></Col>
                             <Col md={3}> 
-                                    <Control.select model=".contactType" name="contactType"
+                                    <Control.select model=".photoType" name="photoType"
                                         className="form-control">
                                         <option>Family</option>
                                         <option>Newborn & Maternity</option>
@@ -186,17 +186,28 @@ class Contact extends Component {
                                 <Col md={10}> {/* eslint-disable-next-line */}
                                     <Control.text model=".referralname" id="referralname" name="referralname"
                                         placeholder="Name"
-                                        className="form-control" 
-                                    />
+                                        className="form-control" />
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="whatsneeded" md={2}>Your Photography Needs</Label>
+                                <Label htmlFor="needs" md={2}>Your Photography Needs</Label>
                                 <Col md={10}> {/* eslint-disable-next-line */}
-                                    <Control.textarea model=".whatsneeded" id="whatsneeded" name="whatsneeded"
+                                    <Control.textarea model=".needs" id="needs" name="needs"
                                         rows="12"
                                         className="form-control"
+                                        validators={{
+                                            required,
+                                            minLength: minLength(20)
+                                            }} 
                                     />
+                                    <Errors className='text-danger'
+                                        model='.needs'
+                                        show='touched'
+                                        component='div'
+                                        messages={{
+                                            required: 'Required',
+                                            minLength: 'Must be at least 20 characters'
+                                        }} />
                                 </Col> 
                             </Row>
                             <Row className="form-group">
