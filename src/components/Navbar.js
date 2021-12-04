@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import '../App.css';
 import { NavLink } from 'react-router-dom';
-import logo from '../resources/logo.png';
+import logo from '../resources/new-logo.png';
 
 class Navigation extends Component {
     constructor(props) {
@@ -28,10 +28,10 @@ class Navigation extends Component {
                             textAlign: "center",
                             backgroundColor: "rgba(128, 128, 128, .7)",
                             color: "white",
-                            height: "50px"
+                            height: "40px"
                         }}>
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src={logo} height="60" width="60" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src={logo} height="70" width="70" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>

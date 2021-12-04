@@ -7,8 +7,11 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^4.6.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
+    "react-animation-components": "^3.0.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-ig-feed": "^1.0.4",
     "react-popper": "^2.2.5",
     "react-redux": "^7.2.0",
@@ -16,8 +19,10 @@
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
+    "react-transition-group": "^4.4.1",
     "reactstrap": "^8.10.1",
     "redux": "^4.0.5",
+    "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

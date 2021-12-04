@@ -66,30 +66,27 @@ class HomeHero extends Component {
                     key={item.src}
                 >
                     <img src={item.src} alt={item.altText} />
-                    <CarouselCaption  captionHeader={item.caption} />
+                    <CarouselCaption captionHeader={item.caption} />
                 </CarouselItem>
             );
         });
 
         return (
             <>
-                            <div style={{
+                <div style={{
                     height: '35px'
                 }}></div>
-            <Carousel
-                activeIndex={activeIndex}
-                next={this.next}
-                previous={this.previous}
-                style={{
-                    height: '100vh',
-                    width: '100vw'
-                }}
-            >
-                
-                {slides}
-                <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-            </Carousel>
+                <Carousel
+                    activeIndex={activeIndex}
+                    next={this.next}
+                    previous={this.previous}
+                    >
+
+                    {slides}
+                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+                    <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                </Carousel>
+
             </>
         );
     }

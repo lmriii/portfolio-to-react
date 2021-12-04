@@ -5,16 +5,15 @@ import Hero from "./Hero";
 import HomeHero from "./HeroCarousel";
 import NewbornGallery1 from './NewbornGallery1'
 
-function Home(){
-    return(
+function Home() {
+    return (
         <>
             <h1 style={{
-                                    marginTop: '50px'
-                                }} >Freezing Moments in Time with Pictures</h1>
+                marginTop: '50px'
+            }} >Freezing Moments in Time with Pictures</h1>
             <HomeHero />
             <About />
-            <NewbornGallery1 />
-            <Contact />
+            
         </>
     );
 }

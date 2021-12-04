@@ -2,6 +2,7 @@ import React from "react";
 import {Card, CardImg, CardColumns} from 'reactstrap';
 import { maternity } from "../resources/photosMaternity";
 
+
 // Simple card element displaying images
 class Maternity extends React.Component {
     constructor(props){

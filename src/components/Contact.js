@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from 'reactstrap';
 import logo from '../resources/logo.png';
 import { Control, LocalForm, Errors } from 'react-redux-form';
+import { Fade, Loop } from 'react-animation-components'
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -53,8 +54,13 @@ class Contact extends Component {
                 <div className="mx-auto row row-content align-items-center">
                     <div className="col-sm-4">
                         <h5>Check out my Instagram</h5>
-                        <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noopener"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
+                        <Loop in interval={700} iterations={5.5}>
+                            <Fade>
+                                <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noopener"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
+                            </Fade>
+                        </Loop>
                     </div>
+
                     <div className="col-4">
                         <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-251-1234</a><br />
                         <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> koelmemoriesphotography@gmail.com</a>
@@ -67,12 +73,12 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-10">
                         <LocalForm onSubmit={values => this.handleSubmit(values)}>
-                        <Row className="form-group">
-                                
+                            <Row className="form-group">
+
                             </Row>
                             <Row className='form-group'>
-                            <Col md={{size: 3, offset: 2}}><strong>Select photography needs</strong></Col>
-                            <Col md={3}> 
+                                <Col md={{ size: 3, offset: 2 }}><strong>Select photography needs</strong></Col>
+                                <Col md={3}>
                                     <Control.select model=".photoType" name="photoType"
                                         className="form-control">
                                         <option>Family</option>
@@ -168,7 +174,7 @@ class Contact extends Component {
                                             required,
                                             validEmail
                                         }}
-                                    /> 
+                                    />
                                     <Errors
                                         className='text-danger'
                                         model='.email'
@@ -198,7 +204,7 @@ class Contact extends Component {
                                         validators={{
                                             required,
                                             minLength: minLength(20)
-                                            }} 
+                                        }}
                                     />
                                     <Errors className='text-danger'
                                         model='.needs'
@@ -208,7 +214,7 @@ class Contact extends Component {
                                             required: 'Required',
                                             minLength: 'Must be at least 20 characters'
                                         }} />
-                                </Col> 
+                                </Col>
                             </Row>
                             <Row className="form-group">
                                 <Col md={{ size: 10, offset: 2 }}>
