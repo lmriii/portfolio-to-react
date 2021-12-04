@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, CardImg, CardText, CardColumns} from 'reactstrap';
+import {Card, CardImg, CardColumns} from 'reactstrap';
 import { newborn1 } from "../resources/photosNewborn1";
 
 // The number of columns change by resizing the window

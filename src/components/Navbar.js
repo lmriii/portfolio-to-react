@@ -23,36 +23,36 @@ class Navigation extends Component {
         return (
             <>
                 <Navbar light sticky="top" expand="md" style={{
-                            fontFamily: "'tangerine', cursive",
-                            marginTop: "0",
-                            textAlign: "center",
-                            backgroundColor: "rgba(128, 128, 128, .7)",
-                            color: "white",
-                            height: "40px"
-                        }}>
+                    fontFamily: "'tangerine', cursive",
+                    marginTop: "0",
+                    textAlign: "center",
+                    backgroundColor: "rgba(128, 128, 128, .7)",
+                    color: "white",
+                    height: "40px"
+                }}>
                     <div className="container">
                         <NavbarBrand className="mr-auto" href="/"><img src={logo} height="70" width="70" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/'>
-                                        <i className="fa fa-home fa-lg" />Home
+                                    <NavLink style={{ textShadow: "2px 2px rgba(137, 134, 135, 0.8)"}} className="nav-link" to='/'>
+                                        Home
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/gallery'>
-                                        <i className="fa fa-image fa-lg" />Gallery
+                                        Gallery
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/about'>
-                                        <i className="fa fa-info fa-lg" />About
+                                        About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
                                     <NavLink className="nav-link" to='/contact'>
-                                        <i className="fa fa-address-cards fa-lg" />Contact
+                                        Contact
                                     </NavLink>
                                 </NavItem>
                             </Nav>

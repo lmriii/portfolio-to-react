@@ -23,9 +23,11 @@ function Hero() {
                                 fontFamily: "'tangerine', cursive",
                                 fontSize: "5.5rem",
                                 textAlign: "center",
-                                backgroundColor: "rgba(128, 128, 128, .3)",
+                                backgroundColor: "rgba(128, 128, 128, .1)",
                                 paddingTop: "3rem",
-                                color: "white"
+                                color: "white",
+                                textShadow: "2px 2px rgba(128, 128, 128, .3)"
+
                             }}>Koel Memories Photography</p>
                         </div>
                     </div>

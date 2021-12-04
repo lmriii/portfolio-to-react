@@ -1,9 +1,6 @@
 import React from "react";
 import About from "./About";
-import Contact from "./Contact";
-import Hero from "./Hero";
 import HomeHero from "./HeroCarousel";
-import NewbornGallery1 from './NewbornGallery1'
 
 function Home() {
     return (

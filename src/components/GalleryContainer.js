@@ -5,7 +5,7 @@ import Maternity from "./MaternityGallery";
 import Family from "./FamilyGallery";
 import Newborn from "./NewbornGallery";
 import ScrollButton from "./ScrollButton";
-import { FadeTransform, Fade } from 'react-animation-components';
+import { FadeTransform } from 'react-animation-components';
 
 class Gallery extends React.Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Gallery extends React.Component {
                 </div>
                 <Nav tabs style={{
                     marginTop: '20px'
-                }}>
+                }} className='justify-content-center m-4'>
                     <NavItem>
                         <NavLink
                             className={classnames({ active: this.state.activeTab === '1' })}

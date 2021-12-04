@@ -4,7 +4,7 @@
 
 
 import React, { Component } from 'react';
-import { Breadcrumb, BreadcrumbItem, Button, Label, Col, Row } from 'reactstrap';
+import { Button, Label, Col, Row } from 'reactstrap';
 import logo from '../resources/logo.png';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Fade, Loop } from 'react-animation-components'
@@ -56,7 +56,7 @@ class Contact extends Component {
                         <h5>Check out my Instagram</h5>
                         <Loop in interval={700} iterations={5.5}>
                             <Fade>
-                                <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noopener"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
+                                <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noreferrer"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
                             </Fade>
                         </Loop>
                     </div>
@@ -78,7 +78,7 @@ class Contact extends Component {
                             </Row>
                             <Row className='form-group'>
                                 <Col md={{ size: 3, offset: 2 }}><strong>Select photography needs</strong></Col>
-                                <Col md={3}>
+                                <Col md={3}> {/*eslint-disable-next-line*/}
                                     <Control.select model=".photoType" name="photoType"
                                         className="form-control">
                                         <option>Family</option>

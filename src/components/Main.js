@@ -5,7 +5,7 @@ import Gallery from "./GalleryContainer";
 import About from "./About";
 import Hero from "./Hero";
 import Contact from "./Contact";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 class Main extends React.Component {
