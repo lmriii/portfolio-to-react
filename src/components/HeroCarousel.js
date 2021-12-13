@@ -4,7 +4,7 @@ import { Carousel, CarouselItem, CarouselControl, CarouselCaption } from 'reacts
 const items = [
     {
         src: 'https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZhbWlseSUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
-        altText: 'Dad and Son',
+        altText: 'Your images are hosted and cannot be displayed while in an airplane',
         caption: 'Family'
     },
     {

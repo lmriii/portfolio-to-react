@@ -9,11 +9,11 @@ export const newborn1 = [
     {
         id: 2,
         name: 'banana',
-        url: '../public/newborn34.jpg'
+        url: '/images/newborn34.jpg'
     },
     {
         id: 3,
         name: 'door',
-        url: 'public/img/newborn1.jpg'
+        url: '/images/newborn33.jpg'
     }
 ];
