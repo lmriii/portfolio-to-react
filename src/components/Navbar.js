@@ -31,27 +31,51 @@ class Navigation extends Component {
                     height: "40px"
                 }}>
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src={logo} height="70" width="70" alt="Koel Memories Logo" className="rounded-circle" /></NavbarBrand>
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav navbar>
+                        <NavbarBrand
+                            className="mr-auto"
+                            href="/"><img src={logo}
+                                height="70"
+                                width="70"
+                                alt="Koel Memories Logo"
+                                className="rounded-circle"
+
+                            />
+                        </NavbarBrand>
+                        <NavbarToggler
+                            onClick={this.toggleNav}
+                        />
+                        <Collapse
+                            isOpen={this.state.isNavOpen}
+                            navbar
+                        >
+                            <Nav
+                                navbar>
                                 <NavItem>
-                                    <NavLink style={{ textShadow: "2px 2px rgba(137, 134, 135, 0.8)"}} className="nav-link" to='/'>
+                                    <NavLink
+                                        style={{ textShadow: "2px 2px rgba(137, 134, 135, 0.8)" }}
+                                        className="nav-link"
+                                        to='/'>
                                         Home
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/gallery'>
+                                    <NavLink
+                                        className="nav-link"
+                                        to='/gallery'>
                                         Gallery
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/about'>
+                                    <NavLink
+                                        className="nav-link"
+                                        to='/about'>
                                         About
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to='/contact'>
+                                    <NavLink
+                                        className="nav-link"
+                                        to='/contact'>
                                         Contact
                                     </NavLink>
                                 </NavItem>

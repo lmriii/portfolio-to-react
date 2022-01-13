@@ -6,7 +6,7 @@ import About from "./About";
 import Hero from "./Hero";
 import Contact from "./Contact";
 import { Routes, Route } from 'react-router-dom';
-
+ 
 
 class Main extends React.Component {
 

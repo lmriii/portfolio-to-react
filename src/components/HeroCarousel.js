@@ -3,23 +3,23 @@ import { Carousel, CarouselItem, CarouselControl, CarouselCaption } from 'reacts
 
 const items = [
     {
-        src: 'https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZhbWlseSUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60',
+        src: '/images/family11.jpg',
         altText: 'Your images are hosted and cannot be displayed while in an airplane',
         caption: 'Family'
     },
     {
-        src: 'https://images.unsplash.com/photo-1508943050604-605048ae62c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWF0ZXJuaXR5JTIwcG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60',
+        src: '/images/maternity5.jpg',
         altText: 'Pregnant Woman',
         caption: 'Maternity'
     },
     {
-        src: 'https://images.unsplash.com/photo-1617818046956-38df20876e85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fG5ld2Jvcm4lMjBwb3J0cmFpdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60',
+        src: '/images/newborn2.jpg',
         altText: 'Newborn Baby',
         caption: 'Newborn'
     }
 ];
 
-class HomeHero extends Component {
+class HeroCarousel extends Component {
     constructor(props) {
         super(props);
         this.state = { activeIndex: 0 };
@@ -65,8 +65,16 @@ class HomeHero extends Component {
                     onExited={this.onExited}
                     key={item.src}
                 >
-                    <img src={item.src} alt={item.altText} />
-                    <CarouselCaption captionHeader={item.caption} />
+                    <img
+                        src={item.src}
+                        alt={item.altText}
+                        style={{
+                            width: '50%'
+                        }}
+                    />
+                    <CarouselCaption
+                        captionHeader={item.caption}
+                    />
                 </CarouselItem>
             );
         });
@@ -80,17 +88,23 @@ class HomeHero extends Component {
                     activeIndex={activeIndex}
                     next={this.next}
                     previous={this.previous}
-                    >
-
+                >
                     {slides}
-                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-                    <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                    <CarouselControl
+                        direction="prev"
+                        directionText="Previous"
+                        onClickHandler={this.previous}
+                    />
+                    <CarouselControl
+                        direction="next"
+                        directionText="Next"
+                        onClickHandler={this.next}
+                    />
                 </Carousel>
-
             </>
         );
     }
 }
 
 
-export default HomeHero;
+export default HeroCarousel;

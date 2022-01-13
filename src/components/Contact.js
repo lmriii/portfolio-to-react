@@ -7,7 +7,7 @@ import React, { Component } from 'react';
 import { Button, Label, Col, Row } from 'reactstrap';
 import logo from '../resources/logo.png';
 import { Control, LocalForm, Errors } from 'react-redux-form';
-import { Fade, Loop } from 'react-animation-components'
+
 
 const required = val => val && val.length;
 const maxLength = len => val => !val || (val.length <= len);
@@ -54,13 +54,8 @@ class Contact extends Component {
                 <div className="mx-auto row row-content align-items-center">
                     <div className="col-sm-4">
                         <h5>Check out my Instagram</h5>
-                        <Loop in interval={700} iterations={5.5}>
-                            <Fade>
-                                <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noreferrer"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
-                            </Fade>
-                        </Loop>
+                        <a href='https://www.instagram.com/koelmemoriesphotography/' target='_blank' rel="noreferrer"><img src={logo} height="100" width="100" alt="Koel Memories Logo" className="rounded-circle" /></a>
                     </div>
-
                     <div className="col-4">
                         <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone" /> 1-206-251-1234</a><br />
                         <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o" /> koelmemoriesphotography@gmail.com</a>

@@ -1,7 +1,8 @@
 import React from "react";
 import About from "./About";
-import HomeHero from "./HeroCarousel";
-import Newborn1 from './NewbornGallery1'
+import Footer from './Footer'
+import HeroCarousel from "./HeroCarousel";
+
 
 function Home() {
     return (
@@ -9,10 +10,9 @@ function Home() {
             <h1 style={{
                 marginTop: '50px'
             }} >Freezing Moments in Time with Pictures</h1>
-            <HomeHero />
-            <Newborn1 />
+            <HeroCarousel />
             <About />
-            
+            <Footer />
         </>
     );
 }
